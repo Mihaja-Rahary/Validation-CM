@@ -175,7 +175,7 @@ const App: React.FC = () => {
                                         >
                                             {!isUnlocked && <div className="absolute inset-0 bg-black/50 rounded-2xl flex items-center justify-center"><span className="text-2xl">🔒</span></div>}
                                             <span className="text-base font-semibold text-gray-200 group-hover:text-white text-center">{topic}</span>
-                                            {isCompleted && <span className="absolute bottom-2 right-3 text-sm font-bold text-green-400">✓ {score}/{activeQuestions.length > 0 ? activeQuestions.length : 10}</span>}
+                                            {isCompleted && <span className="absolute bottom-2 right-3 text-sm font-bold text-green-400">✓ {score}/10</span>}
                                         </button>
                                     );
                                 })}
